@@ -20,7 +20,7 @@ contract EYBlockchainBadge is ERC721, ERC721Enumerable, ERC721Burnable, Ownable,
     {}
 
     function _baseURI() internal pure override returns (string memory) {
-        return "https://badge.eybc.xyz/metadata";
+        return "https://badge.eybc.xyz/api/badges/";
     }
 
     function issue(address to) public onlyOwner {
